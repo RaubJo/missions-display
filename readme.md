@@ -1,23 +1,23 @@
 
 # Table of Contents
 
-1.  [Installation](#orgac5ec05)
-    1.  [Make a bootable sd card for the Raspberry Pi](#orga6e685f)
-    2.  [Login to raspberry pi](#org3066b22)
-        1.  [Get IP address of Raspberry Pi](#orgb20429c)
-        2.  [Login to the Rasberry Pi](#org4d4ec63)
-        3.  [Install and Set up display](#orgf53af32)
-    3.  [Uploading Missions Letters to the display](#org916d45c)
-2.  [Operation](#org8e7a757)
+1.  [Installation](#orgc49f006)
+    1.  [Make a bootable sd card for the Raspberry Pi](#orgd330fcd)
+    2.  [Login to raspberry pi](#org02696bd)
+        1.  [Get IP address of Raspberry Pi](#org6fce0d0)
+        2.  [Login to the Rasberry Pi](#org9372e2d)
+        3.  [Install and Set up display](#org8004b64)
+    3.  [Uploading Missions Letters to the display](#org75849b0)
+2.  [Operation](#org9a17782)
 
 
 
-<a id="orgac5ec05"></a>
+<a id="orgc49f006"></a>
 
 # Installation
 
 
-<a id="orga6e685f"></a>
+<a id="orgd330fcd"></a>
 
 ## Make a bootable sd card for the Raspberry Pi
 
@@ -54,12 +54,12 @@
 12. Wait a few minutes for it connect to the internet before going to the next step.
 
 
-<a id="org3066b22"></a>
+<a id="org02696bd"></a>
 
 ## Login to raspberry pi
 
 
-<a id="orgb20429c"></a>
+<a id="org6fce0d0"></a>
 
 ### Get IP address of Raspberry Pi
 
@@ -69,7 +69,7 @@
     -   It might be 192.168.1.109 which is reserved in the router for this device.
 
 
-<a id="org4d4ec63"></a>
+<a id="org9372e2d"></a>
 
 ### Login to the Rasberry Pi
 
@@ -86,7 +86,7 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
     ![img](./pictures/logged_in.png)
 
 
-<a id="orgf53af32"></a>
+<a id="org8004b64"></a>
 
 ### Install and Set up display
 
@@ -100,7 +100,7 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
 4.  When it restarts it will put all the uploaded letters into rotation
 
 
-<a id="org916d45c"></a>
+<a id="org75849b0"></a>
 
 ## Uploading Missions Letters to the display
 
@@ -115,7 +115,7 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
 5.  The letters will be automatically put into rotation on the display.
 
 
-<a id="org8e7a757"></a>
+<a id="org9a17782"></a>
 
 # Operation
 
@@ -179,4 +179,5 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
 
 1.  The raspberry pi will automatically turn the screen on and off at the above times.
 2.  It puts the screen into a deep sleep mode while it is off.
+3.  You can view the past events in the log.txt file when you first open the web file browser.
 

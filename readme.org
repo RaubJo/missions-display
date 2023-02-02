@@ -86,3 +86,4 @@ On Windows install [[https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.h
 
 1. The raspberry pi will automatically turn the screen on and off at the above times.
 2. It puts the screen into a deep sleep mode while it is off.
+3. You can view the past events in the log.txt file when you first open the web file browser.
