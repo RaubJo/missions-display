@@ -1,23 +1,23 @@
 
 # Table of Contents
 
-1.  [Installation](#org76c12dd)
-    1.  [Make a bootable sd card for the Raspberry Pi](#orga429ba1)
-    2.  [Login to raspberry pi](#org44163d7)
-        1.  [Get IP address of Raspberry Pi](#org72879e4)
-        2.  [Login to the Rasberry Pi](#org59ceb0b)
-        3.  [Install and Set up display](#orga6c9b66)
-    3.  [Uploading Missions Letters to the display](#org989b47e)
-2.  [Operation](#org4898ce8)
+1.  [Installation](#org96d600e)
+    1.  [Make a bootable sd card for the Raspberry Pi](#org721bf5c)
+    2.  [Login to raspberry pi](#org3b7d5b9)
+        1.  [Get IP address of Raspberry Pi](#orgbca4317)
+        2.  [Login to the Rasberry Pi](#orgf01906f)
+        3.  [Install and Set up display](#orge5206d7)
+    3.  [Uploading Missions Letters to the display](#org57bfb55)
+2.  [Operation](#orgd99cfe1)
 
 
 
-<a id="org76c12dd"></a>
+<a id="org96d600e"></a>
 
 # Installation
 
 
-<a id="orga429ba1"></a>
+<a id="org721bf5c"></a>
 
 ## Make a bootable sd card for the Raspberry Pi
 
@@ -45,12 +45,12 @@
 10. Put it in the slot on the Raspberry pi and plug it in.
 
 
-<a id="org44163d7"></a>
+<a id="org3b7d5b9"></a>
 
 ## Login to raspberry pi
 
 
-<a id="org72879e4"></a>
+<a id="orgbca4317"></a>
 
 ### Get IP address of Raspberry Pi
 
@@ -60,11 +60,12 @@
     -   It might be 192.168.1.109 which is reserved in the router for this device.
 
 
-<a id="org59ceb0b"></a>
+<a id="orgf01906f"></a>
 
 ### Login to the Rasberry Pi
 
 On Apple products open the *terminal* application
+
 On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
 1.  Open the terminal and enter the following: (Replace the ip-address with the ip address you just found)
@@ -75,7 +76,7 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
     ![img](./pictures/logged_in.png)
 
 
-<a id="orga6c9b66"></a>
+<a id="orge5206d7"></a>
 
 ### Install and Set up display
 
@@ -89,7 +90,7 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
 4.  When it restarts it will put all the uploaded letters into rotation
 
 
-<a id="org989b47e"></a>
+<a id="org57bfb55"></a>
 
 ## Uploading Missions Letters to the display
 
@@ -100,7 +101,7 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
 5.  The letters will be automatically put into rotation on the display.
 
 
-<a id="org4898ce8"></a>
+<a id="orgd99cfe1"></a>
 
 # Operation
 
