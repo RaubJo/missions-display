@@ -48,8 +48,21 @@ On Windows install [[https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.h
 3. The display will automatically restart every night at midnight.
 4. When it restarts it will put all the uploaded letters into rotation
 ** Uploading Missions Letters to the display
-1. Go to the web file browser (link)
+1. Go to the web file browser [[http://192.168.1.109][here]].
 2. Login with these credentials. Username: NHBCwylie, password: nhbcmissions
 3. Enter the folder called "letters"
 4. Upload letters into this folder by clicking the Up arrow in the top right corner.
 5. The letters will be automatically put into rotation on the display.
+
+* Operation
+| Time            | Function                                |
+| 00:00 Everyday  | Convert all files in the letters folder |
+| 09:45 Sunday    | Screen On                               |
+| 13:00 Sunday    | Screen Off                              |
+| 15:15 Sunday    | Screen On                               |
+| 18:45 Sunday    | Screen Off                              |
+| 18:45 Wednesday | Screen On                               |
+| 21:00 Wednesday | Screen Off                              |
+
+1. The raspberry pi will automatically turn the screen on and off at the above times.
+2. It puts the screen into a deep sleep mode while it is off,
