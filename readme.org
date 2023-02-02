@@ -39,8 +39,8 @@
 *** Login to the Rasberry Pi
 On Apple products open the /terminal/ application
 On Windows install [[https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html][PuTTY]]
-1. Open the terminal and enter the following: (Replace the <ip-address> with the ip address you just found)
-  ssh user@<ip-address>
+1. Open the terminal and enter the following: (Replace the ip-address with the ip address you just found)
+  ssh user@ip-address
 2. Enter the password. You will not see any changes on the screen as you enter the password.
 3. You should get something that looks like this.
 *** Install and Set up display
