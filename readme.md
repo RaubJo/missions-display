@@ -1,23 +1,23 @@
 
 # Table of Contents
 
-1.  [Installation](#org49e1a95)
-    1.  [Make a bootable sd card for the Raspberry Pi](#org78a7b68)
-    2.  [Login to raspberry pi](#org286dd57)
-        1.  [Get IP address of Raspberry Pi](#org3b5c67f)
-        2.  [Login to the Rasberry Pi](#orgac848d7)
-        3.  [Install and Set up display](#org9a6c82b)
-    3.  [Uploading Missions Letters to the display](#org4c8f58b)
-2.  [Operation](#org1335a62)
+1.  [Installation](#orge8a1dce)
+    1.  [Make a bootable sd card for the Raspberry Pi](#org500e1b5)
+    2.  [Login to raspberry pi](#org533c750)
+        1.  [Get IP address of Raspberry Pi](#org0ed657f)
+        2.  [Login to the Rasberry Pi](#orgebe9734)
+        3.  [Install and Set up display](#org095b237)
+    3.  [Uploading Missions Letters to the display](#org9c9e78c)
+2.  [Operation](#orge0d19fe)
 
 
 
-<a id="org49e1a95"></a>
+<a id="orge8a1dce"></a>
 
 # Installation
 
 
-<a id="org78a7b68"></a>
+<a id="org500e1b5"></a>
 
 ## Make a bootable sd card for the Raspberry Pi
 
@@ -52,12 +52,12 @@
 10. Put it in the slot on the Raspberry pi and plug it in.
 
 
-<a id="org286dd57"></a>
+<a id="org533c750"></a>
 
 ## Login to raspberry pi
 
 
-<a id="org3b5c67f"></a>
+<a id="org0ed657f"></a>
 
 ### Get IP address of Raspberry Pi
 
@@ -67,7 +67,7 @@
     -   It might be 192.168.1.109 which is reserved in the router for this device.
 
 
-<a id="orgac848d7"></a>
+<a id="orgebe9734"></a>
 
 ### Login to the Rasberry Pi
 
@@ -84,7 +84,7 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
     ![img](./pictures/logged_in.png)
 
 
-<a id="org9a6c82b"></a>
+<a id="org095b237"></a>
 
 ### Install and Set up display
 
@@ -98,18 +98,22 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
 4.  When it restarts it will put all the uploaded letters into rotation
 
 
-<a id="org4c8f58b"></a>
+<a id="org9c9e78c"></a>
 
 ## Uploading Missions Letters to the display
 
 1.  Go to the web file browser [here](http://192.168.1.109:8080).
-2.  Login with these credentials. Username: NHBCwylie, password: nhbcmissions
+2.  Login with these credentials.
+    
+    **Username**: NHBCwylie
+    
+    **Password**: nhbcmissions
 3.  Enter the folder called &ldquo;letters&rdquo;
 4.  Upload letters into this folder by clicking the Up arrow in the top right corner.
 5.  The letters will be automatically put into rotation on the display.
 
 
-<a id="org1335a62"></a>
+<a id="orge0d19fe"></a>
 
 # Operation
 
