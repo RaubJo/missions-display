@@ -1,0 +1,78 @@
+{
+    "settings": {
+        "key": "pi/JAVnVqIdMQwkTF2yDovlIn34e3lpYxYOyBDr+g/6fgEmAI9qQIIEo/of5/vnBNT1htZQN8wsBFjLMObsBfA==",
+        "signup": false,
+        "createUserDir": false,
+        "userHomeBasePath": "/users",
+        "defaults": {
+            "scope": ".",
+            "locale": "en",
+            "viewMode": "list",
+            "singleClick": false,
+            "sorting": {
+                "by": "name",
+                "asc": false
+            },
+            "perm": {
+                "admin": true,
+                "execute": true,
+                "create": true,
+                "rename": true,
+                "modify": true,
+                "delete": true,
+                "share": true,
+                "download": true
+            },
+            "commands": [
+                "ls",
+                "rm",
+                "mv",
+                "cd"
+            ],
+            "hideDotfiles": false,
+            "dateFormat": false
+        },
+        "authMethod": "json",
+        "branding": {
+            "name": "NHBC Missions Display",
+            "disableExternal": true,
+            "files": "",
+            "theme": "",
+            "color": ""
+        },
+        "commands": {
+            "after_copy": [],
+            "after_delete": [],
+            "after_rename": [],
+            "after_save": [],
+            "after_upload": [],
+            "before_copy": [],
+            "before_delete": [],
+            "before_rename": [],
+            "before_save": [],
+            "before_upload": []
+        },
+        "shell": [
+            "bash",
+            "-c"
+        ],
+        "rules": []
+    },
+    "server": {
+        "root": ".",
+        "baseURL": "",
+        "socket": "",
+        "tlsKey": "",
+        "tlsCert": "",
+        "port": "8080",
+        "address": "192.168.1.109",
+        "log": "stdout",
+        "enableThumbnails": false,
+        "resizePreview": false,
+        "enableExec": false,
+        "typeDetectionByHeader": false
+    },
+    "auther": {
+        "recaptcha": null
+    }
+}

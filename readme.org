@@ -1,0 +1,57 @@
+#+title: Readme
+#+author: Joseph Raub
+#+date: <2022-01-06>
+
+* Installation
+** Make a bootable sd card for the Raspberry Pi
+1. Download the [[https://www.raspberrypi.com/software/][RPI-Imager]]
+2. Put Micro SD Card into computer
+3. Click "Choose OS" in RPI-Imager
+4. Select "Raspberry Pi OS (other)"
+5. Select "Raspberry Pi OS (64-bit)"
+6. Click "Choose Storage" and select the Micro SD Card
+   - It may be useful to note the storage capacity of the card before you put it in.
+7. Click the gear button in the bottom right-hand corner
+8. Select the following checkboxes:
+   - Set hostname: mission-display
+   - Enable SSH
+   - Set username and password
+     User: user
+     Password: nhbcmissions
+   - Configure wireless LAN
+     SSID: NHBC
+     Password: LfeHQgQXm4fwk3H92q69mdGRAnVBB2FQ9yMJrsLm
+     Wireless LAN Country: US
+   - Set locale settings
+     Time zone: America/Chicago
+     Keyboard layout: us
+   - Click save at the bottom
+9. Click "Write" and wait for it to finish
+10. Put it in the slot on the Raspberry pi and plug it in.
+** Login to raspberry pi
+*** Get IP address of Raspberry Pi
+- You might be able to skip this step, if the next step doesn't work then do this step.
+1. Go here: [[http://192.168.1.1/DHCPTable.asp][DHCP Client Table]]
+2. Username: admin, Password: LfeHQgQXm4fwk3H92q69mdGRAnVBB2FQ9yMJrsLm
+3. Look for 'mission-display' in the *Client Name* Column
+4. Find the corresponding IP Address which looks like 192.168.1.xxx
+   - It might be 192.168.1.109 which is reserved in the router for this device.
+*** Login to the Rasberry Pi
+On Apple products open the /terminal/ application
+On Windows install [[https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html][PuTTY]]
+1. Open the terminal and enter the following: (Replace the <ip-address> with the ip address you just found)
+  ssh user@<ip-address>
+2. Enter the password. You will not see any changes on the screen as you enter the password.
+3. You should get something that looks like this.
+*** Install and Set up display
+1. Copy and paste the following
+   <script link>
+2. You can now upload files via the web file browser (link)
+3. The display will automatically restart every night at midnight.
+4. When it restarts it will put all the uploaded letters into rotation
+** Uploading Missions Letters to the display
+1. Go to the web file browser (link)
+2. Login with these credentials. Username: NHBCwylie, password: nhbcmissions
+3. Enter the folder called "letters"
+4. Upload letters into this folder by clicking the Up arrow in the top right corner.
+5. The letters will be automatically put into rotation on the display.

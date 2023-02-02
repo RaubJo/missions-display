@@ -1,0 +1,11 @@
+[Unit]
+Description=Filebrowser server
+After=network.target
+
+[Service]
+ExecStartfilebrowser -c /home/user/filebrowser/fb.json -d /home/user/filebrowser/filebrowser.db
+Restart=always
+
+[Install]
+WantedBy=default.target
+
