@@ -41,6 +41,7 @@ On Windows install [[https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.h
   #+end_src
 2. Enter the password. You will not see any changes on the screen as you enter the password.
 3. You should get something that looks like this.
+   [[./pictures/logged_in.png]]
 *** Install and Set up display
 1. Copy and paste the following
    #+begin_src bash
