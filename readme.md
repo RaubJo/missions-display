@@ -1,23 +1,23 @@
 
 # Table of Contents
 
-1.  [Installation](#org988f366)
-    1.  [Make a bootable sd card for the Raspberry Pi](#orgadf920a)
-    2.  [Login to raspberry pi](#orgb2b2e5c)
-        1.  [Get IP address of Raspberry Pi](#orgb6e900c)
-        2.  [Login to the Rasberry Pi](#orga26b09c)
-        3.  [Install and Set up display](#org4b851df)
-    3.  [Uploading Missions Letters to the display](#orgdbc6c8d)
-2.  [Operation](#orgf2ddee9)
+1.  [Installation](#org550d7ca)
+    1.  [Make a bootable sd card for the Raspberry Pi](#org14879dc)
+    2.  [Login to raspberry pi](#org7b5f061)
+        1.  [Get IP address of Raspberry Pi](#orgcfe8dbd)
+        2.  [Login to the Rasberry Pi](#org6247b4b)
+        3.  [Install and Set up display](#org6fa8c63)
+    3.  [Uploading Missions Letters to the display](#org35e3f5a)
+2.  [Operation](#org2e43605)
 
 
 
-<a id="org988f366"></a>
+<a id="org550d7ca"></a>
 
 # Installation
 
 
-<a id="orgadf920a"></a>
+<a id="org14879dc"></a>
 
 ## Make a bootable sd card for the Raspberry Pi
 
@@ -45,12 +45,12 @@
 10. Put it in the slot on the Raspberry pi and plug it in.
 
 
-<a id="orgb2b2e5c"></a>
+<a id="org7b5f061"></a>
 
 ## Login to raspberry pi
 
 
-<a id="orgb6e900c"></a>
+<a id="orgcfe8dbd"></a>
 
 ### Get IP address of Raspberry Pi
 
@@ -60,7 +60,7 @@
     -   It might be 192.168.1.109 which is reserved in the router for this device.
 
 
-<a id="orga26b09c"></a>
+<a id="org6247b4b"></a>
 
 ### Login to the Rasberry Pi
 
@@ -68,14 +68,13 @@ On Apple products open the *terminal* application
 On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
 1.  Open the terminal and enter the following: (Replace the ip-address with the ip address you just found)
+    
+        ssh user@ip-address
+2.  Enter the password. You will not see any changes on the screen as you enter the password.
+3.  You should get something that looks like this.
 
-    ssh user@ip-address
 
-1.  Enter the password. You will not see any changes on the screen as you enter the password.
-2.  You should get something that looks like this.
-
-
-<a id="org4b851df"></a>
+<a id="org6fa8c63"></a>
 
 ### Install and Set up display
 
@@ -89,7 +88,7 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
 4.  When it restarts it will put all the uploaded letters into rotation
 
 
-<a id="orgdbc6c8d"></a>
+<a id="org35e3f5a"></a>
 
 ## Uploading Missions Letters to the display
 
@@ -100,7 +99,7 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
 5.  The letters will be automatically put into rotation on the display.
 
 
-<a id="orgf2ddee9"></a>
+<a id="org2e43605"></a>
 
 # Operation
 
