@@ -32,7 +32,9 @@
      Keyboard layout: us
    - Click save at the bottom
 9. Click "Write" and wait for it to finish
-10. Put it in the slot on the Raspberry pi and plug it in.
+10. Put it in the slot on the Raspberry pi and power it up.
+11. You should see output on the screen, if not move the hdmi cable to the other port.
+12. Wait a few minutes for it connect to the internet before going to the next step.
 ** Login to raspberry pi
 *** Get IP address of Raspberry Pi
 1. Go here: [[http://192.168.1.1/DHCPTable.asp][DHCP Client Table]]
