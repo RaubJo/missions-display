@@ -1,23 +1,23 @@
 
 # Table of Contents
 
-1.  [Installation](#org6b1c2ec)
-    1.  [Make a bootable sd card for the Raspberry Pi](#orgd4d954c)
-    2.  [Login to raspberry pi](#org053e1b2)
-        1.  [Get IP address of Raspberry Pi](#org2314352)
-        2.  [Login to the Rasberry Pi](#org3ec2d47)
-        3.  [Install and Set up display](#org23a7929)
-    3.  [Uploading Missions Letters to the display](#org220ca4c)
-2.  [Operation](#org00b87ae)
+1.  [Installation](#org502a3e2)
+    1.  [Make a bootable sd card for the Raspberry Pi](#orgf6e331e)
+    2.  [Login to raspberry pi](#org8d10966)
+        1.  [Get IP address of Raspberry Pi](#org514d586)
+        2.  [Login to the Rasberry Pi](#org0d38a2a)
+        3.  [Install and Set up display](#org1608fb6)
+    3.  [Uploading Missions Letters to the display](#org53da35a)
+2.  [Operation](#org5a1d92f)
 
 
 
-<a id="org6b1c2ec"></a>
+<a id="org502a3e2"></a>
 
 # Installation
 
 
-<a id="orgd4d954c"></a>
+<a id="orgf6e331e"></a>
 
 ## Make a bootable sd card for the Raspberry Pi
 
@@ -45,12 +45,12 @@
 10. Put it in the slot on the Raspberry pi and plug it in.
 
 
-<a id="org053e1b2"></a>
+<a id="org8d10966"></a>
 
 ## Login to raspberry pi
 
 
-<a id="org2314352"></a>
+<a id="org514d586"></a>
 
 ### Get IP address of Raspberry Pi
 
@@ -60,7 +60,7 @@
     -   It might be 192.168.1.109 which is reserved in the router for this device.
 
 
-<a id="org3ec2d47"></a>
+<a id="org0d38a2a"></a>
 
 ### Login to the Rasberry Pi
 
@@ -75,7 +75,7 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
 2.  You should get something that looks like this.
 
 
-<a id="org23a7929"></a>
+<a id="org1608fb6"></a>
 
 ### Install and Set up display
 
@@ -86,18 +86,18 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
 4.  When it restarts it will put all the uploaded letters into rotation
 
 
-<a id="org220ca4c"></a>
+<a id="org53da35a"></a>
 
 ## Uploading Missions Letters to the display
 
-1.  Go to the web file browser [here](http://192.168.1.109).
+1.  Go to the web file browser [here](http://192.168.1.109:8080).
 2.  Login with these credentials. Username: NHBCwylie, password: nhbcmissions
 3.  Enter the folder called &ldquo;letters&rdquo;
 4.  Upload letters into this folder by clicking the Up arrow in the top right corner.
 5.  The letters will be automatically put into rotation on the display.
 
 
-<a id="org00b87ae"></a>
+<a id="org5a1d92f"></a>
 
 # Operation
 
@@ -160,5 +160,5 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
 </table>
 
 1.  The raspberry pi will automatically turn the screen on and off at the above times.
-2.  It puts the screen into a deep sleep mode while it is off,
+2.  It puts the screen into a deep sleep mode while it is off.
 
