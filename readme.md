@@ -1,23 +1,23 @@
 
 # Table of Contents
 
-1.  [Installation](#org502a3e2)
-    1.  [Make a bootable sd card for the Raspberry Pi](#orgf6e331e)
-    2.  [Login to raspberry pi](#org8d10966)
-        1.  [Get IP address of Raspberry Pi](#org514d586)
-        2.  [Login to the Rasberry Pi](#org0d38a2a)
-        3.  [Install and Set up display](#org1608fb6)
-    3.  [Uploading Missions Letters to the display](#org53da35a)
-2.  [Operation](#org5a1d92f)
+1.  [Installation](#org988f366)
+    1.  [Make a bootable sd card for the Raspberry Pi](#orgadf920a)
+    2.  [Login to raspberry pi](#orgb2b2e5c)
+        1.  [Get IP address of Raspberry Pi](#orgb6e900c)
+        2.  [Login to the Rasberry Pi](#orga26b09c)
+        3.  [Install and Set up display](#org4b851df)
+    3.  [Uploading Missions Letters to the display](#orgdbc6c8d)
+2.  [Operation](#orgf2ddee9)
 
 
 
-<a id="org502a3e2"></a>
+<a id="org988f366"></a>
 
 # Installation
 
 
-<a id="orgf6e331e"></a>
+<a id="orgadf920a"></a>
 
 ## Make a bootable sd card for the Raspberry Pi
 
@@ -45,12 +45,12 @@
 10. Put it in the slot on the Raspberry pi and plug it in.
 
 
-<a id="org8d10966"></a>
+<a id="orgb2b2e5c"></a>
 
 ## Login to raspberry pi
 
 
-<a id="org514d586"></a>
+<a id="orgb6e900c"></a>
 
 ### Get IP address of Raspberry Pi
 
@@ -60,7 +60,7 @@
     -   It might be 192.168.1.109 which is reserved in the router for this device.
 
 
-<a id="org0d38a2a"></a>
+<a id="orga26b09c"></a>
 
 ### Login to the Rasberry Pi
 
@@ -75,18 +75,21 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
 2.  You should get something that looks like this.
 
 
-<a id="org1608fb6"></a>
+<a id="org4b851df"></a>
 
 ### Install and Set up display
 
 1.  Copy and paste the following
-    <script link>
+    
+        wget https://raw.githubusercontent.com/RaubJo/missions-display/master/scripts/install.sh
+        chmod +x install.sh
+        sudo ./install.sh --full-install
 2.  You can now upload files via the web file browser (link)
 3.  The display will automatically restart every night at midnight.
 4.  When it restarts it will put all the uploaded letters into rotation
 
 
-<a id="org53da35a"></a>
+<a id="orgdbc6c8d"></a>
 
 ## Uploading Missions Letters to the display
 
@@ -97,7 +100,7 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
 5.  The letters will be automatically put into rotation on the display.
 
 
-<a id="org5a1d92f"></a>
+<a id="orgf2ddee9"></a>
 
 # Operation
 

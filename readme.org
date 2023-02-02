@@ -43,7 +43,11 @@ On Windows install [[https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.h
 3. You should get something that looks like this.
 *** Install and Set up display
 1. Copy and paste the following
-   <script link>
+   #+begin_src bash
+   wget https://raw.githubusercontent.com/RaubJo/missions-display/master/scripts/install.sh
+   chmod +x install.sh
+   sudo ./install.sh --full-install
+   #+end_src
 2. You can now upload files via the web file browser (link)
 3. The display will automatically restart every night at midnight.
 4. When it restarts it will put all the uploaded letters into rotation
