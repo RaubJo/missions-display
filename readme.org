@@ -16,7 +16,9 @@
    - Set hostname: mission-display
    - Enable SSH
    - Set username and password
+
      *User*: user
+
      *Password*: nhbcmissions
    - Configure wireless LAN
 

@@ -1,23 +1,23 @@
 
 # Table of Contents
 
-1.  [Installation](#org6b08ffe)
-    1.  [Make a bootable sd card for the Raspberry Pi](#org412155b)
-    2.  [Login to raspberry pi](#org0e964c6)
-        1.  [Get IP address of Raspberry Pi](#org56123a3)
-        2.  [Login to the Rasberry Pi](#orgb67505e)
-        3.  [Install and Set up display](#org2fad5b3)
-    3.  [Uploading Missions Letters to the display](#org90658f2)
-2.  [Operation](#org9023f42)
+1.  [Installation](#org49e1a95)
+    1.  [Make a bootable sd card for the Raspberry Pi](#org78a7b68)
+    2.  [Login to raspberry pi](#org286dd57)
+        1.  [Get IP address of Raspberry Pi](#org3b5c67f)
+        2.  [Login to the Rasberry Pi](#orgac848d7)
+        3.  [Install and Set up display](#org9a6c82b)
+    3.  [Uploading Missions Letters to the display](#org4c8f58b)
+2.  [Operation](#org1335a62)
 
 
 
-<a id="org6b08ffe"></a>
+<a id="org49e1a95"></a>
 
 # Installation
 
 
-<a id="org412155b"></a>
+<a id="org78a7b68"></a>
 
 ## Make a bootable sd card for the Raspberry Pi
 
@@ -33,7 +33,9 @@
     -   Set hostname: mission-display
     -   Enable SSH
     -   Set username and password
+        
         **User**: user
+        
         **Password**: nhbcmissions
     -   Configure wireless LAN
         
@@ -50,12 +52,12 @@
 10. Put it in the slot on the Raspberry pi and plug it in.
 
 
-<a id="org0e964c6"></a>
+<a id="org286dd57"></a>
 
 ## Login to raspberry pi
 
 
-<a id="org56123a3"></a>
+<a id="org3b5c67f"></a>
 
 ### Get IP address of Raspberry Pi
 
@@ -65,7 +67,7 @@
     -   It might be 192.168.1.109 which is reserved in the router for this device.
 
 
-<a id="orgb67505e"></a>
+<a id="orgac848d7"></a>
 
 ### Login to the Rasberry Pi
 
@@ -82,7 +84,7 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
     ![img](./pictures/logged_in.png)
 
 
-<a id="org2fad5b3"></a>
+<a id="org9a6c82b"></a>
 
 ### Install and Set up display
 
@@ -96,7 +98,7 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
 4.  When it restarts it will put all the uploaded letters into rotation
 
 
-<a id="org90658f2"></a>
+<a id="org4c8f58b"></a>
 
 ## Uploading Missions Letters to the display
 
@@ -107,7 +109,7 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
 5.  The letters will be automatically put into rotation on the display.
 
 
-<a id="org9023f42"></a>
+<a id="org1335a62"></a>
 
 # Operation
 
