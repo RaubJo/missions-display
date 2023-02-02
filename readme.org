@@ -19,8 +19,6 @@
      User: user
      Password: nhbcmissions
    - Configure wireless LAN
-     SSID: NHBC
-     Password: LfeHQgQXm4fwk3H92q69mdGRAnVBB2FQ9yMJrsLm
      Wireless LAN Country: US
    - Set locale settings
      Time zone: America/Chicago
@@ -30,11 +28,9 @@
 10. Put it in the slot on the Raspberry pi and plug it in.
 ** Login to raspberry pi
 *** Get IP address of Raspberry Pi
-- You might be able to skip this step, if the next step doesn't work then do this step.
 1. Go here: [[http://192.168.1.1/DHCPTable.asp][DHCP Client Table]]
-2. Username: admin, Password: LfeHQgQXm4fwk3H92q69mdGRAnVBB2FQ9yMJrsLm
-3. Look for 'mission-display' in the *Client Name* Column
-4. Find the corresponding IP Address which looks like 192.168.1.xxx
+2. Look for 'mission-display' in the *Client Name* Column
+3. Find the corresponding IP Address which looks like 192.168.1.xxx
    - It might be 192.168.1.109 which is reserved in the router for this device.
 *** Login to the Rasberry Pi
 On Apple products open the /terminal/ application

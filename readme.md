@@ -1,22 +1,22 @@
 
 # Table of Contents
 
-1.  [Installation](#orgdec251c)
-    1.  [Make a bootable sd card for the Raspberry Pi](#org044b88b)
-    2.  [Login to raspberry pi](#org881c5af)
-        1.  [Get IP address of Raspberry Pi](#org50d6ec3)
-        2.  [Login to the Rasberry Pi](#org23136b5)
-        3.  [Install and Set up display](#orgaf54a4c)
-    3.  [Uploading Missions Letters to the display](#orgd152ffd)
+1.  [Installation](#org7c40a91)
+    1.  [Make a bootable sd card for the Raspberry Pi](#orgc41ccae)
+    2.  [Login to raspberry pi](#org1e086d6)
+        1.  [Get IP address of Raspberry Pi](#orgdc666eb)
+        2.  [Login to the Rasberry Pi](#org79cc102)
+        3.  [Install and Set up display](#org0db0eaa)
+    3.  [Uploading Missions Letters to the display](#org5c632a0)
 
 
 
-<a id="orgdec251c"></a>
+<a id="org7c40a91"></a>
 
 # Installation
 
 
-<a id="org044b88b"></a>
+<a id="orgc41ccae"></a>
 
 ## Make a bootable sd card for the Raspberry Pi
 
@@ -35,8 +35,6 @@
         User: user
         Password: nhbcmissions
     -   Configure wireless LAN
-        SSID: NHBC
-        Password: LfeHQgQXm4fwk3H92q69mdGRAnVBB2FQ9yMJrsLm
         Wireless LAN Country: US
     -   Set locale settings
         Time zone: America/Chicago
@@ -46,24 +44,22 @@
 10. Put it in the slot on the Raspberry pi and plug it in.
 
 
-<a id="org881c5af"></a>
+<a id="org1e086d6"></a>
 
 ## Login to raspberry pi
 
 
-<a id="org50d6ec3"></a>
+<a id="orgdc666eb"></a>
 
 ### Get IP address of Raspberry Pi
 
--   You might be able to skip this step, if the next step doesn&rsquo;t work then do this step.
--   Go here: [DHCP Client Table](http://192.168.1.1/DHCPTable.asp)
--   Username: admin, Password: LfeHQgQXm4fwk3H92q69mdGRAnVBB2FQ9yMJrsLm
--   Look for &rsquo;mission-display&rsquo; in the **Client Name** Column
--   Find the corresponding IP Address which looks like 192.168.1.xxx
+1.  Go here: [DHCP Client Table](http://192.168.1.1/DHCPTable.asp)
+2.  Look for &rsquo;mission-display&rsquo; in the **Client Name** Column
+3.  Find the corresponding IP Address which looks like 192.168.1.xxx
     -   It might be 192.168.1.109 which is reserved in the router for this device.
 
 
-<a id="org23136b5"></a>
+<a id="org79cc102"></a>
 
 ### Login to the Rasberry Pi
 
@@ -78,7 +74,7 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
 2.  You should get something that looks like this.
 
 
-<a id="orgaf54a4c"></a>
+<a id="org0db0eaa"></a>
 
 ### Install and Set up display
 
@@ -89,7 +85,7 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
 4.  When it restarts it will put all the uploaded letters into rotation
 
 
-<a id="orgd152ffd"></a>
+<a id="org5c632a0"></a>
 
 ## Uploading Missions Letters to the display
 
