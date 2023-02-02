@@ -1,23 +1,23 @@
 
 # Table of Contents
 
-1.  [Installation](#org96d600e)
-    1.  [Make a bootable sd card for the Raspberry Pi](#org721bf5c)
-    2.  [Login to raspberry pi](#org3b7d5b9)
-        1.  [Get IP address of Raspberry Pi](#orgbca4317)
-        2.  [Login to the Rasberry Pi](#orgf01906f)
-        3.  [Install and Set up display](#orge5206d7)
-    3.  [Uploading Missions Letters to the display](#org57bfb55)
-2.  [Operation](#orgd99cfe1)
+1.  [Installation](#org6b08ffe)
+    1.  [Make a bootable sd card for the Raspberry Pi](#org412155b)
+    2.  [Login to raspberry pi](#org0e964c6)
+        1.  [Get IP address of Raspberry Pi](#org56123a3)
+        2.  [Login to the Rasberry Pi](#orgb67505e)
+        3.  [Install and Set up display](#org2fad5b3)
+    3.  [Uploading Missions Letters to the display](#org90658f2)
+2.  [Operation](#org9023f42)
 
 
 
-<a id="org96d600e"></a>
+<a id="org6b08ffe"></a>
 
 # Installation
 
 
-<a id="org721bf5c"></a>
+<a id="org412155b"></a>
 
 ## Make a bootable sd card for the Raspberry Pi
 
@@ -33,9 +33,14 @@
     -   Set hostname: mission-display
     -   Enable SSH
     -   Set username and password
-        User: user
-        Password: nhbcmissions
+        **User**: user
+        **Password**: nhbcmissions
     -   Configure wireless LAN
+        
+        **SSID**: NHBC
+        
+        **Password**: Enter the wifi password for your wireless connection
+        
         Wireless LAN Country: US
     -   Set locale settings
         Time zone: America/Chicago
@@ -45,12 +50,12 @@
 10. Put it in the slot on the Raspberry pi and plug it in.
 
 
-<a id="org3b7d5b9"></a>
+<a id="org0e964c6"></a>
 
 ## Login to raspberry pi
 
 
-<a id="orgbca4317"></a>
+<a id="org56123a3"></a>
 
 ### Get IP address of Raspberry Pi
 
@@ -60,7 +65,7 @@
     -   It might be 192.168.1.109 which is reserved in the router for this device.
 
 
-<a id="orgf01906f"></a>
+<a id="orgb67505e"></a>
 
 ### Login to the Rasberry Pi
 
@@ -73,10 +78,11 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
         ssh user@ip-address
 2.  Enter the password. You will not see any changes on the screen as you enter the password.
 3.  You should get something that looks like this.
+    
     ![img](./pictures/logged_in.png)
 
 
-<a id="orge5206d7"></a>
+<a id="org2fad5b3"></a>
 
 ### Install and Set up display
 
@@ -90,7 +96,7 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
 4.  When it restarts it will put all the uploaded letters into rotation
 
 
-<a id="org57bfb55"></a>
+<a id="org90658f2"></a>
 
 ## Uploading Missions Letters to the display
 
@@ -101,7 +107,7 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
 5.  The letters will be automatically put into rotation on the display.
 
 
-<a id="orgd99cfe1"></a>
+<a id="org9023f42"></a>
 
 # Operation
 

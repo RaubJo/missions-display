@@ -16,9 +16,14 @@
    - Set hostname: mission-display
    - Enable SSH
    - Set username and password
-     User: user
-     Password: nhbcmissions
+     *User*: user
+     *Password*: nhbcmissions
    - Configure wireless LAN
+
+     *SSID*: NHBC
+
+     *Password*: Enter the wifi password for your wireless connection
+
      Wireless LAN Country: US
    - Set locale settings
      Time zone: America/Chicago
@@ -42,6 +47,7 @@ On Windows install [[https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.h
   #+end_src
 2. Enter the password. You will not see any changes on the screen as you enter the password.
 3. You should get something that looks like this.
+
    [[./pictures/logged_in.png]]
 *** Install and Set up display
 1. Copy and paste the following
