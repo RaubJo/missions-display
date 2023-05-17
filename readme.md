@@ -141,7 +141,7 @@ On Windows install [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/la
 
 
 <tr>
-<td class="org-left">09:45 Sunday</td>
+<td class="org-left">08:45 Sunday</td>
 <td class="org-left">Screen On</td>
 </tr>
 
