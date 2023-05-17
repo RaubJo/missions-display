@@ -79,7 +79,7 @@ installCrons () {
 
     # Screen On
     # 9:45am Sunday
-    printf "45 9 * * 0 user /home/user/missions-display/scripts/screen_on.sh\n" | sudo tee "/etc/cron.d/screen_on"
+    printf "45 8 * * 0 user /home/user/missions-display/scripts/screen_on.sh\n" | sudo tee "/etc/cron.d/screen_on"
     # 5:15pm Sunday
     printf "15 17 * * 0 user /home/user/missions-display/scripts/screen_on.sh\n" | sudo tee -a "/etc/cron.d/screen_on"
     # 6:45pm Wednesday
