@@ -67,14 +67,10 @@ installFilebrowser () {
 
 }
 
-watchFolder () {
-    inotifywait -mre close_write "/home/$SUDO_USER/letters" && "export NEW_LETTERS=True"
-}
-
 installCrons () {
     printf "Installing Automatic Services\n"
 
-    # Re-convert all pdf files in /home/user/letters at midnight every night
+    # Convert all pdf files in /home/user/letters at midnight every night
     printf "0 0 * * * user /home/user/missions-display/scripts/convert.sh\n" | sudo tee "/etc/cron.d/convert"
 
     # Screen On
@@ -87,9 +83,9 @@ installCrons () {
 
     # Screen Off
     # 1:00pm Sunday
-    printf "0 13 * * 3 user /home/user/missions-display/scripts/screen_off.sh\n" | sudo tee "/etc/cron.d/screen_off"
+    printf "40 12 * * 0 user /home/user/missions-display/scripts/screen_off.sh\n" | sudo tee "/etc/cron.d/screen_off"
     # 7:30pm Sunday
-    printf "30 19 * * 3 user /home/user/missions-display/scripts/screen_off.sh\n" | sudo tee -a "/etc/cron.d/screen_off"
+    printf "30 19 * * 0 user /home/user/missions-display/scripts/screen_off.sh\n" | sudo tee -a "/etc/cron.d/screen_off"
     # 9:00pm Wednesday
     printf "00 21 * * 3 user /home/user/missions-display/scripts/screen_off.sh\n" | sudo tee -a "/etc/cron.d/screen_off"
 }
@@ -101,8 +97,6 @@ fullInstall () {
     installFilebrowser
     installCrons
 }
-
-
 
 case "$1" in
     -u|--update)
@@ -120,9 +114,6 @@ case "$1" in
     -f|--install-filebrowser)
         installFilebrowser
         ;;
-    -w|--watch)
-        watchFolder
-        ;;
     -F|--full-install)
         fullInstall
         ;;
@@ -133,6 +124,5 @@ case "$1" in
         echo "-c/--install-crons: Install the automatic screen on/off and slideshow"
         echo "-r/--repo: Clone the software behind this system"
         echo "-f/--install-filebrowser: Install the web file explorer"
-        echo "-w/--watch: Watches the letters folder for new files"
         echo "-F/--full-install: Do all of the above steps. Do this for a new system"
 esac

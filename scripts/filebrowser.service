@@ -3,9 +3,8 @@ Description=Filebrowser server
 After=network.target
 
 [Service]
-ExecStartfilebrowser -c /home/user/filebrowser/fb.json -d /home/user/filebrowser/filebrowser.db
+ExecStart=filebrowser -c /home/user/.config/filebrowser/fb.json -d /home/user/.config/filebrowser/filebrowser.db
 Restart=always
 
 [Install]
 WantedBy=default.target
-
