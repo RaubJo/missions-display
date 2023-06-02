@@ -11,3 +11,8 @@ xset s noblank
 xset s 0 0
 
 xset dpms force off
+
+printf "# Screen Off #\n  $(date)\n" | sudo tee -a "/home/user/log.txt"
+
+# Feh is the program that the slideshow starts, killing it will shutdown the script
+pkill "feh"
