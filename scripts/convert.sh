@@ -1,29 +1,52 @@
 #!/usr/bin/env bash
 
-
-PDF_DIR="$HOME/letters/"
+UPLOAD_DIR="$HOME/letters/"
+PDF_DIR="$HOME/processed_letters/"
 PNG_DIR="$HOME/png_letters/"
+LOGFILE="$HOME/log.txt"
 
 SCREEN_SIZE="2160x3840"
 
-cd "$PDF_DIR" || return
+checkFolders () {
+    if [ ! -d "$PDF_DIR" ]; then
+	    mkdir -p "$PDF_DIR"
+    fi
 
-a=1
-for i in *.pdf; do
-    NEW=$(printf "%02d.pdf" "$a")
-    printf "%s\n" "$NEW"
-    mv -n -- "$i" "$NEW"
-    a=$((a+1))
-done
+    if [ ! -d "$PNG_DIR" ]; then
+	    mkdir -p "$PNG_DIR"
+    fi
+}
 
-BEGIN_CONVERT=$(date)
+convertFiles () {
+    cd "$PDF_DIR" || return
+    BEGIN_CONVERT=$(date)
 
-for i in *.pdf; do
-    FILENAME="${i%.pdf}.png"
-    printf "Converting %s to %s\n" "$i" "$FILENAME"
-    convert -density 600 -quality 100 -alpha remove -resize "$SCREEN_SIZE!" "$i" "$PNG_DIR$FILENAME"
-done
+    for i in *.pdf; do
+        FILENAME="${i%.pdf}.png"
+        printf "Converting %s to %s\n" "$i" "$FILENAME"
+        convert -density 600 -quality 100 -alpha remove -resize "$SCREEN_SIZE!" "$i" "$PNG_DIR$FILENAME"
+    done
 
-END_CONVERT=$(date)
+    END_CONVERT=$(date)
 
-printf "Start: %s\n End: %s" "$BEGIN_CONVERT" "$END_CONVERT" | sudo tee -a "/home/$USER/convert_log.txt"
+    printf "# New Conversion Process #\nStart: %s\nEnd: %s\n" "$BEGIN_CONVERT" "$END_CONVERT" | sudo tee -a "$LOGFILE"
+}
+
+processFiles () {
+    checkFolders
+
+    cd "$UPLOAD_DIR" || return
+    echo $(pwd)
+
+    a=1
+    for i in *.pdf; do
+        NEW=$(printf "%02d.pdf" "$a")
+        printf "Found: %s --> %s\n" "$i" "$NEW"
+        cp -n -- "$i" "$PDF_DIR$NEW"
+        a=$((a+1))
+    done
+
+    convertFiles
+}
+
+processFiles
